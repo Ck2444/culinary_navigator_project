@@ -13,14 +13,14 @@ function App() {
     <div>
       <Header />
       <main className="container content">
-        <Routes>
+        <Routes basename='/culinary_navigator_project'>
 
           <Route exct path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/category/:name' element={<Category />} />
           <Route path='/meal/:id' element={<Recipe />} />
-          <Route path='*' element={<NotFound />} />
+          {/* <Route path='*' element={<NotFound />} /> */}
         </Routes>
       </main>
       <Footer />
